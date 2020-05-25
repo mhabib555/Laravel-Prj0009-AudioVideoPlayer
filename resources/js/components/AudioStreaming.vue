@@ -62,15 +62,15 @@
                             <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
                                 <div class="song-now-playing-icon-container">
                                     <div class="play-button-container"></div>
-                                    <img class="now-playing" src="svg/blue-player/now-playing.svg" />
+                                    <img class="now-playing" src="/player/blue-player/now-playing.svg" />
                                 </div>
                                 <div class="song-meta-data">
                                     <span class="song-title">Risin' High (feat Raashan Ahmad)</span>
                                     <span class="song-artist">Ancient Astronauts</span>
                                 </div>
                                 <a href="https://switchstancerecordings.bandcamp.com/track/risin-high-feat-raashan-ahmad" class="bandcamp-link" target="_blank">
-                                    <img class="bandcamp-grey" src="svg/blue-player/bandcamp-grey.svg" />
-                                    <img class="bandcamp-white" src="svg/blue-player/bandcamp-white.svg" />
+                                    <img class="bandcamp-grey" src="/player/blue-player/bandcamp-grey.svg" />
+                                    <img class="bandcamp-white" src="/player/blue-player/bandcamp-white.svg" />
                                 </a>
                                 <span class="song-duration">3:30</span>
                             </div>
@@ -172,7 +172,7 @@
                 sample_rate: 50
             }
             });
-            document.getElementById('large-visualization').style.height = document.getElementById('album-art').offsetWidth + 'px';
+//            document.getElementById('large-visualization').style.height = document.getElementById('album-art').offsetWidth + 'px';
             
         }
     }
@@ -213,7 +213,7 @@ div#amplitude-player {
     width: 50%;
     display: flex;
     flex-direction: column; }
-    div#amplitude-left img.album-art {
+    div#amplitude-left img#album-art {
       width: 100%; }
     div#amplitude-left div#player-left-bottom {
       flex: 1;
@@ -583,7 +583,7 @@ div#amplitude-player {
       height: 19px;
       float: left; }
       div#control-container div.amplitude-mute.amplitude-not-muted {
-        background: url("/player/blue-players/volume.svg");
+        background: url("/player/blue-player/volume.svg");
         background-repeat: no-repeat; }
       div#control-container div.amplitude-mute.amplitude-muted {
         background: url("/player/blue-player/mute.svg");
